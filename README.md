@@ -1,10 +1,10 @@
-# Modelling universal adversarial perturbations
-(Work in progress)
+# NAG - Network for Adversary Generation
+
 ## Introduction
-This repository contains the code for learning a manifold of perturbations that can easiy fool current state-of-the-art CNNs, using a generative model. At present, this repo provides the facility to train the generator that can produce perturbations to fool VGG F, VGG 16, VGG 19, GoogleNet, CaffeNet, ResNet 50, ResNet 152.
+This repository contains the code for our paper **[NAG - Network for Adversary Generation](https://arxiv.org/abs/1712.03390)**. At present, this repo provides the facility to train the generator that can produce perturbations to fool VGG F, VGG 16, VGG 19, GoogleNet, CaffeNet, ResNet 50, ResNet 152.
 
 ## Architecture
-![](/extras/architecture.png)
+![](/extras/nag.png)
 
 ## Dependencies
 ```
