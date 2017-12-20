@@ -6,20 +6,23 @@ This repository contains the code for our paper **[NAG - Network for Adversary G
 ## Architecture
 ![](/extras/nag.png)
 
-## Dependencies
-```
-Python 2.7.1, Tensorflow 1.0.1
-```
 ## Sample perturbations
-![](/extras/perturbations.png)
+![](/extras/pb_nag.png)
 
 ## Generalizability of universal adversarial perturbations
 The table below shows the fooling rate achieved for different networks. The rows represent the network for which the perturbation is crafted, and the column indicates the netwrok on which the strength of perturbation is tested. Testing is done on the 50k validation set of ILSVRC.  
 
-![](/extras/fr_table.png)
+![](/extras/nag_table.png)
 
-(more to follow...)
+## Sample fooling
 
+![](/extras/example.png)
+
+
+## Dependencies
+```
+Python 2.7.1, Tensorflow 1.0.1, h5py
+```
 
 
 
