@@ -1,7 +1,11 @@
 # NAG - Network for Adversary Generation
 
 ## Introduction
-This repository contains the code for our paper **[NAG - Network for Adversary Generation](https://arxiv.org/abs/1712.03390)**. At present, this repo provides the facility to train the generator that can produce perturbations to fool VGG F, VGG 16, VGG 19, GoogleNet, CaffeNet, ResNet 50, ResNet 152. The generator architecture has been modified from **[here](https://github.com/openai/improved-gan/tree/master/imagenet)**.
+Code for the paper **[NAG - Network for Adversary Generation](https://arxiv.org/abs/1712.03390)**. 
+
+Konda Reddy Mopuri*, Utkarsh Ojha*, Utsav Garg, R. Venkatesh Babu.
+
+At present, this repo provides the facility to train the generator that can produce perturbations to fool VGG F, VGG 16, VGG 19, GoogleNet, CaffeNet, ResNet 50, ResNet 152. The generator architecture has been modified from **[here](https://github.com/openai/improved-gan/tree/master/imagenet)**.
 
 ## Architecture
 ![](/extras/nag.png)
