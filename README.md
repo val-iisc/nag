@@ -43,5 +43,15 @@ Run ``` python uap_generate.py ``` to obtain the perturbations from the saved ge
 
 ![](/extras/example.png)
 
+## Reference
+```
+@inproceedings{mopuri-bmvc-2017,
+  title={NAG: Network for Adversary Generation},
+  author={Mopuri, Konda Reddy and Ojha, Utkarsh and Garg, Utsav and Babu, R Venkatesh},
+ booktitle = {Proceedings of the IEEE Computer Vision and Pattern Recognition ({CVPR})},
+ year = {2018}
+}
+```
+
 Contact **[Utkarsh Ojha](https://utkarshojha.github.io/)** in case you have any questions.
 
