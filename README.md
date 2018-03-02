@@ -27,9 +27,17 @@ The table below shows the fooling rate achieved for different networks. The rows
 ```
 Python 2.7.1, Tensorflow 1.0.1, h5py
 ```
-## Training your own generator
+## Setting up the dataset
 
-We've shown the results by training the generator on 10k images and evaluating it on ILSVRC 50k validation images. Accordingly, our training code requires existence of relevant .hdf5 files. To create these for training, validation and testing, the utilities/ folder provides the relevant scripts. For example, the ```train_hdf5.py ``` creates the ```ilsvrc_train.hdf5 ``` file which acts as the training data. The ```img_path``` provides the location where the actual training images are stored in usual form (ex .jpg). Repeat this for validation and testing set. As a caution, the .hdf5 file for testing data (containing 50k images) will occupy ~30 GB; ensure that sufficient space is available in the disk.
+Our major results have been obtained by training our model on a dataset consisting of 10k images, 10 random images from each of the 1000 classes from ILSVRC dataset. Testing has been done on the standard 50k validation images of ILSVRC. To speed up the training and testing of the model, data in .hdf5 format has been used. ```utilities/``` folder provides the relevant scripts to convert a folder of images in a suitable format (.jpg, .png etc.) into a single .hdf5 file. 
+
+For example, ```train_hdf5.py``` does the necessary pre-processing on a folder of images and creates ```ilsvrc_train.hdf5``` file. 
+
+**Caution:**  .hdf5 files created will be of large sizes. ```ilsvrc_test.hdf5``` will be ~30gb. 
+
+
+
+## Training your own generator
 
 Once the .hdf5 files are done, we can begin training the generator for a given classifier. Set the target classifier in ```classify.py  ``` (currently the default network is ResNet 50) from any one of the mentioned networks.
 
