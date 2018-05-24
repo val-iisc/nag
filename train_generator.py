@@ -38,7 +38,7 @@ def add_perturbation(inp, perturbation):
    return inp      
 
 def add_perturbation2(inp,perturbation):
-   ''' Helper function to randomly add the perturbations
+   ''' Helper function to add the perturbations in a random order (for the shuffled perturbed batch)
    '''   
    k = inp.get_shape().as_list()[0]
    for i in xrange(k):
